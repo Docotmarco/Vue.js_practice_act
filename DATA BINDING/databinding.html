@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="databinding.css" rel="stylesheet" type="text/css">
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+    <script src="databinding.js" defer></script>
+    <title>DATA BINDING</title>
+</head>
+<body>
+    <section id="id_section">
+        <!--output your name-->
+        
+        <h1 >{{name}}</h1>
+        <!--output your age-->
+        <p >{{age}}</p>
+        <!--output your age + 5-->
+        <p  > {{add_age()}}</p>
+        <!--output a ramdum number-->
+        <p>{{add_func()}}</p>
+        <div>
+            <!--display some image you found via google-->
+            <img v-bind:src="img_link"/>
+        </div>
+        <!--prepopulate the input field with your name via the "value" attribute-->
+        Input:<input type="text" v-on:input="set_name"><br>
+       
+    </section>
+</body>
+</html>
