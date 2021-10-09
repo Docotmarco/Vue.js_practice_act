@@ -8,31 +8,32 @@ const app = Vue.createApp({
           img_link:'https://source.unsplash.com/random'
         };
     },
-   
+  
     methods:{
-
-      add_func(){
+      add_addrandum(){
         const randum=Math.random();
-          if(randum < 0.5){
+          if(randum < 0.1){
              return randum;
           }
-          else{
-           
+          else {
             return this.randumNUmber;
           }
       },
       add_age(){
         const randum=Math.random();
-          if(randum < 0.3){
+          if(randum < 0.1){
             return this.addage;
           }
-          else{
-          
+          else {
             return this.age+5;
           }
       },
       set_name(event){
+       
+        
           this.name=event.target.value;
+        
+         
       }
    }
 });
